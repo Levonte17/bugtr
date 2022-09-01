@@ -12,8 +12,7 @@ res.send('Hello Adult Life!');
 app.use(express.urlencoded({extended: false}))
 app.use(express.static('public'))
 //REDIRECT
-app.get('/', (req, res) => res.redirect('/budget'));
-
+app.get('/', (req, res) => res.redirect('budget'));
 //HOME/INDEX
 app.get('/budget', (req, res) => {
 res.render('index.ejs', {budget: budget}
