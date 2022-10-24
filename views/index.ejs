@@ -9,23 +9,107 @@
     <link rel="stylesheet" href="/skeleton.css" />
 </head>
 <body>
-    
-    <h1>Budget List</h1>
-    <a href="/budget/new"> <button>New Entry</button></a>
+    <header class="sticky" style="position: fixed; padding-left: 20%; ">
+        <h1 style="color: rgb(187, 125, 43);"> Le'Vonte Larry </h1>
+        <h2 style="color: rgb(187, 125, 43);"> Full Stack Software Engineer </h2>
+        <nav>
+            <a href="https://docs.google.com/document/d/1Rln-5GHqsBt-osZZ0Nc6lq1QiarVHdpXri7lYEz3SPo/edit"
+                style="color: rgb(187, 125, 43); text-shadow: 3px 3px 3px black;">
+            RESUME
+            
+            </a>
+            &nbsp;&nbsp;
+            <a href="https://github.com/Levonte17?tab=repositories"
+                style="color: rgb(187, 125, 43); text-shadow: 3px 3px 3px black;">
+            GITHUB
+            
+            </a>
+            &nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/fullstack-levonte-larry/" 
+                style="color: rgb(187, 125, 43); text-shadow: 3px 3px 3px black;">
+            LINKED IN
+            
+            </a>
+            &nbsp;&nbsp;
+            <a href="https://www.facebook.com/profile.php?id=100086642206680" 
+                style="color: rgb(187, 125, 43); text-shadow: 3px 3px 3px black;">
+              FACEBOOK  
+            
+            </a>
+            &nbsp;&nbsp;
+            <a href="https://www.instagram.com/the.digital.expert/"
+                style="color: rgb(187, 125, 43); text-shadow: 3px 3px 3px black;">
+            INSTAGRAM
+        </a>
+        </nav>
+    </header>
+
+    <div class="first">
+        <h1 style="padding-top: 50%;"> Professional  Web Developing Experience</h1>
+        <br><br><br>
+        <img src="https://i.imgur.com/CmqriLX.jpg" alt="" height="400" width="500"
+            style="text-align: center; padding-top:5%; border-radius: 5%;">
+        <br><br>
+       
 <div class="container">
     
-        <% budget.forEach((f) => { %>
-            
-                    <table>
-                        <td><%= f.date %></td><br>
-                        <td> <a href="/budget/<%= f.id %>">
-                            <%= f.name %></a></td><br>
-                        <td><%= f.amount %></td><br>
-                    </table>
-    <% }) %>
-<a href="/budget/new"> <button>New Entry</button></a>
+        <img src="https://i.imgur.com/RtCdFlg.jpg" alt="" width="350" height="400"
+            style="border-radius: 25%;" > &nbsp;&nbsp;&nbsp;
+        <img src="https://i.imgur.com/rGQIa7L.jpg" alt="" width="350" height="400"
+            style="border-radius: 25%;" > &nbsp;&nbsp;&nbsp;
+        <img src="https://i.imgur.com/djJnCQo.jpg" alt="" width="350" height="400"
+            style="border-radius: 25%;" > &nbsp;&nbsp;&nbsp;
+        <img src="https://i.imgur.com/6E2bVzq.jpg" alt="" width="350" height="400"
+            style="border-radius: 25%;" > &nbsp;&nbsp;&nbsp;
+        <img src="https://i.imgur.com/prbApGT.jpg" alt="" width="350" height="400"
+            style="border-radius: 25%;" > &nbsp;&nbsp;&nbsp;
+        <img src="https://i.imgur.com/vOSU6Sw.jpg" alt="" width="350" height="400"
+            style="border-radius: 25%;" > &nbsp;&nbsp;&nbsp;
+        <img src="https://i.imgur.com/xS43aAK.jpg" alt="" width="350" height="400"
+            style="border-radius: 25%;" > &nbsp;&nbsp;&nbsp;
+        
 
 </div>
 </body>
 </html>
 
+<style>
+    .container{
+        margin: 10%;
+        justify-content: space-between;
+    }
+    h1{
+        padding-top: 15%;
+        font-size: 400%;
+        color: rgb(187, 125, 43);
+        text-shadow: 5px 5px 5px black;
+    }
+    h2{
+        font-size: 300%;
+        text-shadow: 2px 2px 2px black;
+    }
+    a{
+        text-decoration: none;
+        font-size: 200%;
+    }
+    body{
+        color: rgb(187, 125, 43);
+        text-shadow: 5px 5px 5px black;
+        text-align: center;
+        background-image: url(https://i.imgur.com/KUWq1Q0.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    button:hover
+    a:hover{
+        background-color: black;
+        color: goldenrod;
+    }
+    button{
+        background-color: goldenrod;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        border-radius: 40%;
+    }
+</style>
